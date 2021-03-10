@@ -1,6 +1,7 @@
 package com.student.enrollmentapi.service;
 
 import com.student.enrollmentapi.entity.Student;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 

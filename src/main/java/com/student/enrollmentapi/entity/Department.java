@@ -10,20 +10,15 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="student")
-public class Student {
+@Table(name = "department")
+public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
-    private Integer roll;
-    private String session;
-    private String email;
-    private String mobile;
     private String department;
 
     @Lob
-    @Column(columnDefinition =  "MEDIUMBLOB")
+    @Column(columnDefinition = "MEDIUMBLOB")
     private String image;
 }

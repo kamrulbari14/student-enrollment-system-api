@@ -1,6 +1,5 @@
 package com.student.enrollmentapi.entity;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,13 +10,12 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="image")
-public class Image {
+@Table(name = "admin")
+public class Admin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer id;
-    public String contentType;
-    public byte[] size;
-    public String img;
+    private Integer id;
+    @Column(unique=true)
+    private String email;
 }
